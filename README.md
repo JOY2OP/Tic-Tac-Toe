@@ -1,4 +1,5 @@
 ![image](https://github.com/JOY2OP/Tic-Tac-Toe/assets/77735525/e086d7b0-4b4c-4162-ab0d-97c26c22b03e)
+Used Next.js and React.js
 
 ## Getting Started
 
