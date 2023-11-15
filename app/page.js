@@ -108,7 +108,7 @@ export default function Game(){
 }
 
 //Tell who the winner is- X or O
-function calculateWinner(squares){
+function calculateWinner(squares){   //squares param - different with squares array
   const lines = [
     [0,1,2],
     [3,4,5],
