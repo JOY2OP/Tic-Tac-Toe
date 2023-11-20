@@ -28,7 +28,7 @@ const Board = ({xIsNext, onPlay, squares}) => {
   let status;
   if (winner){
     status= "Winner: " + winner
-  }else if(!squares.includes(null)){
+  }else if(!squares.includes(null)){   //if no square includes null = draw
       status= "Draw"
   } else{  
     status = "Next Player: " + (xIsNext ? "X" : "O")
@@ -60,10 +60,11 @@ const Board = ({xIsNext, onPlay, squares}) => {
 
 const Game = ()=>{
   // const [xIsNext, setXIsNext] = useState(true);  //Helps toggling players
-  const [history, setHistory] = useState([Array(9).fill(null)]);
-  const [currentMove, setCurrentMove] = useState(0);
-  const xIsNext = currentMove %2 === 0 //top line of this function converted
-  const currentSquares = history[currentMove]
+  
+  const [history, setHistory] = useState([Array(9).fill(null)]);   //[[null*9]] -> [[null*9],[null*8, 'X']]
+  const [currentMove, setCurrentMove] = useState(0);               //Keeps tracks of which move is it ie ->1,2,3,
+  const xIsNext = currentMove %2 === 0                             //top line of this function converted
+  const currentSquares = history[currentMove]                      //history[1] -> Render the squares accordingly
   // console.log(squares)
 
 
