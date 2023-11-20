@@ -1,6 +1,6 @@
 ![image](https://github.com/JOY2OP/Tic-Tac-Toe/assets/77735525/78118565-4df0-4c53-832c-7ef6757847aa)
 
-With Time travel functionality and can detect 'draw'
+With Time travel functionality, can detect 'draw' and also reset button
 Used Next.js and React.js
 
 ## Getting Started
